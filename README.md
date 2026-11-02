@@ -39,5 +39,4 @@ Die Tests verwenden eigene temporäre Datenbanken und verändern die gespeichert
 
 Es gibt einen Studiengang pro Datenbank und nur das aktuelle Ergebnis je Modul.
 Frühere Prüfungsversuche werden nicht aufbewahrt. Der Notenschnitt dient zur Orientierung;
-das endgültige Notenziel benötigt eine eingetragene Abschlussnote. Das Programm läuft nur
-auf dem eigenen Rechner und hat keine Verbindung zu myCampus.
+das endgültige Notenziel benötigt eine eingetragene Abschlussnote.
