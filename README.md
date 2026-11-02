@@ -31,6 +31,7 @@ Die Tests verwenden eigene temporäre Datenbanken und verändern die gespeichert
 - `repository.py`: Studiengang laden und mit `speichern(studium)` ablegen.
 - `controller.py`: Formulare prüfen und Änderungen ausführen.
 - `view.py`: HTML-Seite und Eingabeformulare erzeugen.
+- `style.css`: Schrift, Farben und Anordnung der Seite.
 - `beispieldaten.py`: Daten für den ersten Start.
 - `test_dashboard.py`: Berechnung, Speicherung und ausgewählte Fehlerfälle prüfen.
 
