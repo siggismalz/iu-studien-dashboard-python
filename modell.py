@@ -1,8 +1,4 @@
-"""Fachmodell des Studien-Dashboards, weitergeführt aus Phase 2.
-
-Alle Beispieldaten sind synthetisch. Technische Speicher-IDs gehören nicht
-zum Fachmodell. Private Namen sind Python-Konvention, keine Sicherheitsgrenze.
-"""
+"""Klassen und Berechnungen für das Studium, übernommen und ergänzt aus Phase 2."""
 
 from __future__ import annotations
 

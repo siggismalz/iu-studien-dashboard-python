@@ -1,9 +1,9 @@
-"""Erzeugt die HTML-Seite. Fachregeln und SQL gehören nicht in diese Klasse."""
+"""Stellt den Studiengang als HTML-Seite mit Eingabeformularen dar."""
 from datetime import date
 from html import escape
 from urllib.parse import urlencode
 
-from modell import Studiengang, Pruefungsstatus
+from modell import Studiengang
 
 
 class DashboardView:
@@ -22,7 +22,7 @@ class DashboardView:
     section {margin:18px 0} .ziele {display:grid;grid-template-columns:1fr 1fr;gap:24px}
     table {border-collapse:collapse;width:100%;font-size:15px} caption {text-align:left;margin:0 0 12px}
     th,td {text-align:left;padding:10px 8px;border-bottom:1px solid #dce2e7;vertical-align:top}
-    th {background:var(--hell)} .tabelle {overflow-x:auto} .zahl {white-space:nowrap}
+    th {background:var(--hell)} .tabelle {overflow-x:auto}
     h1,h2,h3,td,header p {overflow-wrap:anywhere}
     form {margin:12px 0} .felder {display:flex;flex-wrap:wrap;gap:12px;align-items:end}
     label {display:flex;flex-direction:column;gap:4px;flex:1;min-width:150px;font-size:14px}
@@ -30,13 +30,11 @@ class DashboardView:
     input,select {background:white;color:var(--text);width:100%} button {background:var(--blau);
       color:white;border-color:var(--blau);cursor:pointer;padding:9px 16px}
     button:hover {background:#123958} :focus-visible {outline:3px solid #c56714;outline-offset:3px}
-    .sekundaer {background:white;color:var(--blau)} .sekundaer:hover {background:var(--hell)}
     .meldung {padding:12px 16px;background:#eaf4ec;border-left:4px solid #307744}
     .fehler {padding:12px 16px;background:#fff0eb;border-left:4px solid #a83220}
     details {padding:8px 0} summary {cursor:pointer;font-weight:bold;min-height:44px;padding:10px 0}
-    .teilen {display:grid;grid-template-columns:1fr 1fr;gap:24px}
     .hinweis {font-size:14px;color:var(--grau);margin-top:12px} footer {font-size:14px;color:var(--grau)}
-    @media(max-width:720px) {.karten,.ziele,.teilen {grid-template-columns:1fr}
+    @media(max-width:720px) {.karten,.ziele {grid-template-columns:1fr}
       main {padding:18px 14px} h1 {font-size:26px} .karte,section {padding:16px}
       .felder {align-items:stretch} label {min-width:100%} button {width:100%}}
     """
